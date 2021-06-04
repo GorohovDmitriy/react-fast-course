@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
 import Context from '../context'
+import CancelIcon from '@material-ui/icons/Cancel'
 
 const styles = {
 	li: {
@@ -11,6 +12,7 @@ const styles = {
 		border: '1px solid #ccc',
 		borderRadius: '4px',
 		marginBottom: '.5rem',
+		transition: '0.8s',
 	},
 	input: {
 		marginRight: '1rem',
@@ -37,7 +39,7 @@ function TodoItem({ todo, index, onChange }) {
 				&nbsp;
 				{todo.title}
 			</span>
-			<button className='rm' onClick={removeTodo.bind(null, todo.id)}>&times;</button>
+			<button className='rm' onClick={removeTodo.bind(null, todo.id)}><CancelIcon /></button>
 		</li>
 	)
 }

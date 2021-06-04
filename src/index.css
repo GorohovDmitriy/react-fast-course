@@ -20,10 +20,15 @@ h1 {
 	margin-bottom: 20px;
 }
 .rm {
-	color: #fff;
-	background-color: red;
+	opacity: 0.5;
+	background-color: #fff;
 	border: none;
-	border-radius: 20%;
+}
+.rm:hover {
+	opacity: 0.8;
+}
+li:hover {
+	transform: scale(1.05);
 }
 .done {
 	text-decoration: line-through;
